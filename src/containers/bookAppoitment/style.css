@@ -1,0 +1,272 @@
+.page__container {
+    height: 100vh;
+    width: 100%;
+}
+
+.loading__wrap {
+    height: inherit;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading__anim {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #000;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* doctor info wrap style */
+
+.doctor_info__wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid #ddd;
+    border-radius: 7.5px;
+    padding: 20px 20px;
+    box-shadow: 0px 10px 20px 1px #ddd;
+    margin: 50px 0px 0px 0px;
+}
+
+.doctor_info__wrap>div {
+    text-align: left;
+}
+
+.diw__img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.diw__name {
+    font-size: clamp(20px, 8vw, 24px);
+    line-height: 130%;
+    color: rgba(0, 0, 0, 1);
+}
+
+.diw__degree {
+    font-size: clamp(14px, 8vw, 16px);
+    line-height: 130%;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.diw__expertise {
+    font-size: clamp(12px, 8vw, 14px);
+    line-height: 130%;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 10px;
+}
+
+/* form style  */
+
+.form__container {
+    margin: 50px 0px;
+}
+
+.form_label__txt {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+}
+
+.fc_input__style {
+    width: 50%;
+    display: block;
+    margin: 10px 0px 0px 0px;
+    height: 40px;
+    border-radius: 7.5px;
+    padding: 0px 10px;
+    border: 1px solid #808080;
+}
+
+.form__title {
+    font-size: clamp(20px, 8vw, 28px);
+    line-height: 130%;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.fc__section {
+    margin-bottom: 30px;
+}
+
+.fc_time__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+.fc_time__header>div {
+    background: #ddd;
+    padding: 10px 20px;
+    border-radius: 7.5px;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+.fc__footer {
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.fc__footer button {
+    height: 50px;
+    width: 180px;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 7.5px;
+    cursor: pointer;
+}
+
+.error_txt {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: red;
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* date & time slider style css  */
+
+.date_slider__container {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.asc__slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.asc__slide {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 10;
+}
+
+.asc__slide p {
+    margin: 30px 0px;
+}
+
+.asc__prev,
+.asc__next {
+    position: absolute;
+    top: 30px;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background-color: #007bff;
+    border-radius: 50%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+
+.asc__prev:hover,
+.asc__next:hover {
+    background-color: #0451a3;
+}
+
+.asc__prev:disabled,
+.asc__next:disabled {
+    opacity: 0.3;
+    cursor: no-drop;
+}
+
+.asc__prev {
+    left: 0px;
+}
+
+.asc__next {
+    right: 0px;
+}
+
+.asc__list,
+.tsc__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+}
+
+.asc__month {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.asc__btn,
+.tsc__btn {
+    padding: 10px 25px;
+    transition: all linear 0.3s;
+    border-radius: 7.5px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.asc__btn:hover,
+.tsc__btn:hover {
+    background: rgb(5, 5, 189);
+    color: white;
+}
+
+.asc__btn.active,
+.tsc__btn.active {
+    background: #0000ff;
+    color: #fff;
+    font-weight: 500;
+}
+
+.asc__btn:disabled,
+.tsc__btn:disabled {
+    background: inherit;
+    color: #808080;
+    cursor: no-drop;
+}
+
+@media only screen and (max-width: 767.5px) {
+    .fc_input__style {
+        width: -webkit-fill-available;
+    }
+}
