@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# AI Bot Appointment Booking System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the AI Bot Appointment Booking System! This project provides a seamless appointment booking experience for both patients and doctors, utilizing language processing and speech-to-text capabilities.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- User Signup and Login:
+  - Patients and doctors can create accounts and log in securely.
 
-### `npm start`
+- Dashboard:
+  - Both patients and doctors have personalized dashboards for managing their appointments and availability.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Availability Management:
+  - Doctors can easily add and manage their availability for appointments.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- AI Appointment Booking:
+  - The system uses natural language processing (NLP) to understand user requests for appointment scheduling.
 
-### `npm test`
+- Speech-to-Text:
+  - Speech recognition enables users to interact with the system using voice commands.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Redux Toolkit:
+  - State management for the frontend is handled with Redux Toolkit.
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Backend:
+  - Express.js
+  - MySQL
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Frontend:
+  - React
+  - Redux Toolkit
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Language Processing:
+  - NLP Plugin
 
-### `npm run eject`
+- Speech-to-Text:
+  - React-Speech-Recognition
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+ ## Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Login](https://ik.imagekit.io/vishwakarmanikhil/appointment-app/appointment_app_login.png)
+![Signup](https://ik.imagekit.io/vishwakarmanikhil/appointment-app/appointment_app_signup.png)
+![Chatbot](https://ik.imagekit.io/vishwakarmanikhil/appointment-app/appointment_app_chatbot.png)
+![Add Availability](https://ik.imagekit.io/vishwakarmanikhil/appointment-app/appointment_app_add_availability.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+###Clone the repository:
+   git clone https://github.com/your-username/ai-appointment-booking-system.git
 
-## Learn More
+### Backend Setup:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Navigate to the `backend` directory.
+2. Install dependencies: `npm install`
+3. Configure MySQL database settings in `config.js`.
+4. Run the server: `npm start`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Frontend Setup:
 
-### Code Splitting
+1. Navigate to the `frontend` directory.
+2. Install dependencies: `npm install`
+3. Run the React app: `npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Explore the System:
 
-### Analyzing the Bundle Size
+- Open your browser and go to [http://localhost:3000](http://localhost:3000).
+- Sign up, log in, and explore the features!
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions are welcome! If you'd like to contribute to the project, please follow our [Contribution Guidelines](CONTRIBUTING.md).
