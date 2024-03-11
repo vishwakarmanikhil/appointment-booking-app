@@ -1,0 +1,18 @@
+.availability__wrap {
+    min-height: 250px;
+}
+
+.availability_loding__wrap {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.availability__card {
+    border: 2px solid #00b96b;
+    background: #e3efea;
+    border-radius: 7.5px;
+    padding: 10px;
+}
