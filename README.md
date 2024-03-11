@@ -37,6 +37,11 @@ Welcome to the AI Bot Appointment Booking System! This project provides a seamle
 
 - Speech-to-Text:
   - React-Speech-Recognition
+ 
+## Bot feature
+1. Book Appointment (context - Book an appointment)
+2. Reschedule Appointment (context - Reschedule appointment)
+3. Cancel Appointment (context - cancel appointment)
 
  ## Screenshots
 
